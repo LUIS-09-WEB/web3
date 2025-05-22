@@ -1,0 +1,14 @@
+{%extends 'encabezado.html' %}
+{% block title %} iniciar_sesion {% endblock%}
+{% block containt %}
+<fielset class="formulario">
+    <form>
+        <legends>INICIO DE SESION</br>
+        <input class= "usuario" type="text" id="" style="font-size: 30px; width: 400px; height: 50px;" maxlength="200" placeholder="usuario" required><br>
+        <legends>CONTRASEÑA</br>
+        <input class= "contraseña" type="password" id="" style="font-size: 30px; width: 400px; height: 50px;" maxlength="200" placeholder="contraseña" required><br>
+        <a href="/registro/" target="blank" class="registro2">REGISTRAR</br>
+        <input class= "enviar" type="submit" value="iniciar sesion" style="font-size: 30px; width:200px; height: 50px;">
+    </form>
+</fielset>
+{% endblock %}

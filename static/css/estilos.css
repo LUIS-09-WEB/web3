@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("fuente/Montserrat-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("fuente/Montserrat-Black.ttf") format("truetype");
+  font-weight: 500;
+}
+
+body {
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(14, 169, 234);
+  text-align: center;
+}
+
+/*letras y borde de barra*/
+header {
+  font-weight: 500;
+  background-color:white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*color de barra*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:rgb(14, 169, 234);
+
+}
+
+.logo {
+  flex-basis: 33.33%;
+  display: flex;
+}
+
+.logo > img{
+  width: 20%;
+  height: auto;
+  border-radius: 100px;
+}
+
+.logo > h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: flex-end;
+}
+/*texto de contacto etc*/
+.nav-link a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+/*color de letra de barra*/
+.nav-link a:hover {
+  color: white;
+
+}
+.nav-link li {
+  margin: 0 15px;
+}
+
+/*imagen de fondo*/
+.jumbotron {
+  background-image: url('../img/02.jpg');
+  min-height: 60vh;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.picture {
+  width: 100px;
+
+  & > img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+}
+/*color de letra y textos*/
+h2 {
+  font-weight: 100;
+  margin-top: 5px;
+  font-size: 30px;
+  color: #151515;
+}
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+ 
+}
+  
+.enca {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  flex-basis: 33.33%;
+
+}
+.section{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+
+}
+.copy{
+  font-size: 10px;
+  color: #000000;
+}
+.box1{
+  font-weight: 100;
+  font-size: 100px;
+  text-align: justify;
+  margin: 20px auto;
+  padding: 10px; 
+}
+.tec{
+  font-size: 30px;
+  color: #f4f4f4;
+  margin: 100px;
+}
+.nombre{
+  color: #f4f4f4;
+}
+.servicios{
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+section{
+  background-color:rgb(153,51,255);
+  box-shadow: 0px 0px 300px rgb(25, 0, 250);
+  height: 350px;
+  width: 350px;
+  margin: 20px auto;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+
+  & > div {
+      color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+  }
+}
+.lis{
+  font-weight: 100;
+  font-size: 20px;
+  height: 20px;
+  text-align: left;
+}
+.num{
+  font-weight: 100;
+  font-size: 100px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px; 
+}
+.info{
+  color: #f4f4f4;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+/* Estilos generales */
+.caja {
+  font-weight: 500;
+  background-color: rgb(14, 169, 234);
+  display: center;
+  height: 100vh;
+}
+
+/* Contenedor principal con Grid */
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-template-rows: 1fr 1fr; /* Dos filas de igual tamaño */
+  gap: 15px; /* Espacio entre los cuadros */
+  max-width: 1000px;
+  padding-left: 24%;
+}
+
+/* Estilos para todos los cuadros */
+.cuadros {
+  background-color: rgb(153,51,255);
+  margin: 0px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(255, 254, 254);
+}
+
+/* Estilos para los títulos */
+.titulo {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* Estilos para los párrafos */
+.texto {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: left;
+}
+.contacto{
+  color: #fdf9f9;
+}
+.mapa{
+  width: 500px;
+  height: 500px;
+}  
+.formulario{
+  font-size: 30px;
+}
+input{
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+form{    
+  color: aqua;
+  background-color: rgb(153,51,255);
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  margin-left: 700px;
+  text-align: center;
+  box-shadow: 0px 0px 300px rgb(25, 0, 250);
+}
+.registro{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.enviar{
+  text-align: center;
+}
+.usuario{
+  margin-bottom: 20px;
+}
+.registro{
+  color: aqua;
+}
+/* formuario de registro*/
+.registro{
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+input{
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+.registros1{
+  color: rgb(0, 0, 0);
+  background-color: rgb(153,51,255);
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  margin-left: 700px;
+  text-align: center;
+  box-shadow: 0px 0px 300px rgb(25, 0, 250);
+}
+label{
+  margin-bottom: 2000px ;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  border-radius: 10px;
+}
+.username{
+  margin-bottom: 200px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+.registro2{
+  color: aqua;
+}
